@@ -1844,9 +1844,9 @@ body.light-mode .hero-socials .social-icon-hero:hover {
 /* Responsive */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        gap: 15px;
-        padding-top: 30px;
+        flex-direction: row;
+        gap: 0;
+        padding-top: 0;
     }
 
     .container {
