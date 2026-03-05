@@ -1847,6 +1847,8 @@ body.light-mode .hero-socials .social-icon-hero:hover {
         flex-direction: row;
         gap: 0;
         padding-top: 0;
+        height: 60px;
+        overflow: visible;
     }
 
     .container {
