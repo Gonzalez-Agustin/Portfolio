@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agustín Nicolás González | Portfolio</title>
+<link rel="icon" type="image/png" href="imagenes/favicon.png?v=99">
+
+<!-- SEO Meta Tags -->
+<meta name="description"
+    content="Portfolio de Agustín Nicolás González - Desarrollador Web Full Stack y Técnico Informático Profesional. Especializado en experiencias digitales únicas.">
+<meta name="keywords"
+    content="Desarrollador Web, Full Stack, Agustín González, Portfolio, JavaScript, React, Python, Programador, Argentina">
+<meta name="author" content="Agustín Nicolás González">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gonzalez-agustin.github.io/">
+<meta property="og:title" content="Agustín Nicolás González | Portfolio">
+<meta property="og:description"
+    content="Desarrollador Web con +3 años de experiencia diseñando experiencias digitales únicas.">
+<meta property="og:image" content="imagenes/IMG-20251122-WA0047.jpg.jpeg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Agustín Nicolás González | Portfolio">
+<meta property="twitter:description"
+    content="Desarrollador Web con +3 años de experiencia diseñando experiencias digitales únicas.">
+<meta property="twitter:image" content="imagenes/IMG-20251122-WA0047.jpg.jpeg">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <header>
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#inicio" data-i18n="nav-logo">PORTAFOLIO.</a>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#inicio" data-i18n="nav-home">Inicio</a></li>
+                        <li><a href="#sobre-mi" data-i18n="nav-about">Sobre Mí</a></li>
+                        <li><a href="#proyectos" data-i18n="nav-projects">Proyectos</a></li>
+                        <li><a href="#habilidades" data-i18n="nav-skills">Habilidades</a></li>
+                        <li><a href="#contacto-form" data-i18n="nav-contact">Contacto</a></li>
+                    </ul>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <div class="nav-tools">
+                        <button id="theme-toggle" class="theme-btn">
+                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </button>
+                        <button id="language-toggle" class="lang-btn-toggle">ES</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="inicio" class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1><span id="typewriter"></span><span class="cursor">|</span></h1>
+                        <h2 data-i18n="hero-role">Técnico Informático Profesional</h2>
+                        <p class="bio" data-i18n="hero-bio">
+                            Compromiso, creatividad y soluciones eficientes centradas en tu visión.
+                        </p>
+                        <div class="cta-buttons video-cta">
+                            <a href="imagenes/Agustin_Nicolas_Gonzalez_ES.pdf"
+                                download="Agustin_Nicolas_Gonzalez_ES.pdf" target="_blank" class="btn primary-btn"
+                                data-i18n="hero-cv">Descargar CV</a>
+                            <div class="hero-socials">
+                                <a href="https://www.linkedin.com/in/agustin-gonzalez-b47047384/" target="_blank">
+                                    <img src="imagenes/linkedin.png" alt="LinkedIn" class="social-icon-hero">
+                                </a>
+                                <a href="https://github.com/Gonzalez-Agustin" target="_blank" title="GitHub">
+                                    <img src="imagenes/github.png" alt="GitHub" class="social-icon-hero">
+                                </a>
+                                <a href="mailto:gonzalez.agustin.it@gmail.com" title="Email">
+                                    <svg class="social-icon-hero" xmlns="http://www.w3.org/2000/svg" width="40"
+                                        height="40" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="profile-container">
+                            <img src="imagenes/Gemini_Generated_Image_giiyp4giiyp4giiy-removebg-preview.png"
+                                alt="Agustín Nicolás González" class="profile-pic">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre-mi" class="about-section">
+                <div class="container">
+                    <h3 data-i18n="about-title" class="section-title">Sobre Mí</h3>
+                    <div class="about-grid">
+                        <div class="about-col glass-card">
+                            <h4 data-i18n="about-history-title">Mi Trayectoria</h4>
+                            <div class="about-text-container">
+                                <p data-i18n="about-history-text"></p>
+                            </div>
+                        </div>
+                        <div class="about-col glass-card">
+                            <h4 data-i18n="about-timeline-title">Experiencia Reciente</h4>
+                            <div class="timeline">
+                                <div class="timeline-item active">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date" data-i18n="timeline-date-1">Ene 2026 -
+                                            Actualidad</span>
+                                        <h5 data-i18n="timeline-role-1">Desarrollador Web</h5>
+                                        <p data-i18n="timeline-company-1">Standard Muebles</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date" data-i18n="timeline-date-2">2025</span>
+                                        <h5 data-i18n="timeline-role-2">Técnico Informático Profesional</h5>
+                                        <p data-i18n="timeline-company-2">Graduación</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proyectos" class="projects-section">
+                <h3 data-i18n="projects-title" class="section-title">Mis Proyectos</h3>
+                <div class="projects-grid">
+                    <!-- Standard Muebles -->
+                    <div class="project-card"
+                        style="background: url('imagenes/imagen presentacion standard muebles.PNG') left center/cover no-repeat;">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4 data-i18n="project-std-title">Standard Muebles</h4>
+                                <p data-i18n="project-std-desc">Sitio web corporativo moderno para catálogo de muebles.
+                                </p>
+                                <div class="project-links-container" style="flex-direction: column; gap: 8px;">
+                                    <span class="project-btn pill-btn outline"
+                                        style="opacity: 0.8; cursor: not-allowed; border-style: dashed; width: 100%;"
+                                        data-i18n="project-coming-soon">Próximamente</span>
+                                    <a href="javascript:void(0)" class="project-btn pill-btn-sm outline gallery-trigger"
+                                        style="cursor: pointer; border-style: solid; text-decoration: none;"
+                                        data-i18n="project-view-previews">Ver vistas previas</a>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag" title="React"><img src="imagenes/React-icon.svg.png"
+                                        alt="React"></span>
+                                <span class="tag" title="Astro"><img src="imagenes/astro-icon-light-gradient.png"
+                                        alt="Astro"></span>
+                                <span class="tag" title="Tailwind CSS"><img src="imagenes/Tailwind_CSS_Logo.svg.png"
+                                        alt="Tailwind"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AmbieGen -->
+                    <div class="project-card"
+                        style="background: url('imagenes/Caputura ambiegen 2.PNG') center/cover no-repeat;">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4 data-i18n="project-amb-title">AmbieGen</h4>
+                                <p data-i18n="project-amb-desc">Arquitecto de ambientes sonoros interactivo.</p>
+                                <div class="project-links-container">
+                                    <a href="https://github.com/Gonzalez-Agustin/AmbieGen" target="_blank"
+                                        class="project-btn pill-btn">
+                                        <img src="imagenes/github.png" alt="GitHub"
+                                            style="width: 18px; margin-right: 4px; filter: brightness(0) invert(1);">
+                                        Ver repositorio
+                                    </a>
+                                    <a href="https://gonzalez-agustin.github.io/AmbieGen/" target="_blank"
+                                        class="project-btn pill-btn">Demo</a>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag" title="React"><img src="imagenes/React-icon.svg.png"
+                                        alt="React"></span>
+                                <span class="tag" title="CSS3"><img src="imagenes/CSS3.png" alt="CSS3"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Valorant Dashboard -->
+                    <div class="project-card"
+                        style="background: url('imagenes/Dashboard Valorant.PNG') center/cover no-repeat;">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4 data-i18n="project-val-title">Panel de Valorant</h4>
+                                <p data-i18n="project-val-desc">Interfaz inmersiva con estadísticas y estética gamer
+                                    premium.</p>
+                                <div class="project-links-container">
+                                    <a href="https://github.com/Gonzalez-Agustin/Valorant-stats" target="_blank"
+                                        class="project-btn pill-btn">
+                                        <img src="imagenes/github.png" alt="GitHub"
+                                            style="width: 18px; margin-right: 4px; filter: brightness(0) invert(1);">
+                                        Ver repositorio
+                                    </a>
+                                    <a href="https://valorant-stats-blush.vercel.app/" target="_blank"
+                                        class="project-btn pill-btn">Demo</a>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag" title="React"><img src="imagenes/React-icon.svg.png"
+                                        alt="React"></span>
+                                <span class="tag" title="Astro"><img src="imagenes/astro-icon-light-gradient.png"
+                                        alt="Astro"></span>
+                                <span class="tag" title="Tailwind CSS"><img src="imagenes/Tailwind_CSS_Logo.svg.png"
+                                        alt="Tailwind"></span>
+                                <span class="tag" title="TypeScript"><img src="imagenes/Typescript.svg.png"
+                                        alt="TypeScript"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python Organizer -->
+                    <div class="project-card"
+                        style="background: url('imagenes/Automatizador de descargas.PNG') center/cover no-repeat;">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4 data-i18n="project-py-title">Automatizador de descargas</h4>
+                                <p data-i18n="project-py-desc">Script de automatización para gestión de
+                                    descargas.</p>
+                                <div class="project-links-container">
+                                    <a href="https://github.com/Gonzalez-Agustin/automatizador-descargas"
+                                        target="_blank" class="project-btn pill-btn">
+                                        <img src="imagenes/github.png" alt="GitHub"
+                                            style="width: 18px; margin-right: 4px; filter: brightness(0) invert(1);">
+                                        Ver repositorio
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag" title="Python"><img src="imagenes/Python-logo-notext.svg.png"
+                                        alt="Python"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio -->
+
+                </div>
+            </section>
+
+            <section id="habilidades" class="skills-section grid-view">
+                <h3 data-i18n="skills-title" class="section-title">Habilidades Técnicas</h3>
+
+                <div class="skills-controls">
+                    <button class="view-btn active" data-view="grid" title="Cuadrícula">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </button>
+                    <button class="view-btn" data-view="columns" title="Columnas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="21" y1="10" x2="3" y2="10"></line>
+                            <line x1="21" y1="6" x2="3" y2="6"></line>
+                            <line x1="21" y1="14" x2="3" y2="14"></line>
+                            <line x1="21" y1="18" x2="3" y2="18"></line>
+                        </svg>
+                    </button>
+                    <button class="view-btn" data-view="carousel" title="Carrusel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="skills-container">
+                    <!-- Front-end -->
+                    <div class="skills-group">
+                        <h4 class="category-title" data-i18n="skills-cat-frontend">Front-end</h4>
+                        <div class="skills-grid compact">
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/css3-html5-e1383236383597.png" alt="HTML CSS" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>HTML & CSS</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/js-icon-transparent-background-free-png.png" alt="JS"
+                                    class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/Typescript.svg.png" alt="TypeScript" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>TypeScript</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/React-icon.svg.png" alt="React" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>React</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Tailwind</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/bootstrap-logo-shadow.png" alt="Bootstrap" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Bootstrap</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/astro-icon-light-gradient.png" alt="Astro" class="skill-icon-sm"
+                                    id="astro-skill-icon">
+                                <div class="skill-info">
+                                    <h4>Astro</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back-end -->
+                    <div class="skills-group">
+                        <h4 class="category-title" data-i18n="skills-cat-backend">Back-end</h4>
+                        <div class="skills-grid compact">
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/Python-logo-notext.svg.png" alt="Python" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/1174925.webp" alt="Node.js" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Node.js</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/Java_programming_language_logo.svg.png" alt="Java"
+                                    class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Java</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Otras -->
+                    <div class="skills-group">
+                        <h4 class="category-title" data-i18n="skills-cat-other">Otras</h4>
+                        <div class="skills-grid compact">
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/windows-logo-png_seeklogo-153127.png" alt="Windows"
+                                    class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Windows</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/MX_Linux_Logo.png" alt="Linux MX" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Linux MX</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/Git-Icon-1788C.png" alt="Git" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>Git</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/github-logo-png_seeklogo-304612.png" alt="GitHub"
+                                    class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>GitHub</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/image (1).png" alt="VS Code" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>VS Code</h4>
+                                </div>
+                            </div>
+                            <div class="skill-card compact-card">
+                                <img src="imagenes/IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ" class="skill-icon-sm">
+                                <div class="skill-info">
+                                    <h4>IntelliJ</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="soft-skills">
+                <h3 data-i18n="soft-skills-title" class="section-title">Habilidades Blandas</h3>
+                <div class="tags-container">
+                    <span class="soft-tag" data-i18n="soft-1">Aprendizaje Constante</span>
+                    <span class="soft-tag" data-i18n="soft-2">Comprometido</span>
+                    <span class="soft-tag" data-i18n="soft-3">Resolución de Problemas</span>
+                    <span class="soft-tag" data-i18n="soft-4">Trabajo en Equipo</span>
+                    <span class="soft-tag" data-i18n="soft-5">Adaptabilidad</span>
+                </div>
+            </div>
+
+            <section id="contacto-form" class="contain-form">
+                <h3 data-i18n="contact-title" class="section-title">Envíame un Mensaje</h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="user_name" placeholder="Tu Nombre" required
+                            data-i18n-placeholder="form-name-ph">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="user_email" placeholder="Tu Email" required
+                            data-i18n-placeholder="form-email-ph">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Asunto" required
+                            data-i18n-placeholder="form-subject-ph">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tu Mensaje" required
+                            data-i18n-placeholder="form-message-ph"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn" data-i18n="form-submit">Enviar
+                        Mensaje</button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer id="contacto-footer" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Agustín Nicolás González</h4>
+                <p data-i18n="footer-role">Desarrollador Web</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/agustin-gonzalez-b47047384/" target="_blank">
+                        <img src="imagenes/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://github.com/Gonzalez-Agustin" target="_blank">
+                        <img src="imagenes/github.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="mailto:gonzalez.agustin.it@gmail.com" title="Email">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <video id="project-video" controls>
+                    <source src="" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content gallery-content">
+            <span class="close-modal close-gallery">&times;</span>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" id="gallery-prev">&#10094;</button>
+                <div class="gallery-image-wrapper">
+                    <img id="gallery-image" src="" alt="Vista previa del proyecto" class="carousel-image">
+                </div>
+                <button class="carousel-btn next-btn" id="gallery-next">&#10095;</button>
+
+                <div class="carousel-counter">
+                    <span id="current-slide">1</span> / <span id="total-slides">7</span>
+                </div>
+            </div>
+            <div class="carousel-indicators" id="gallery-indicators"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
