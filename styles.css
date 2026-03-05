@@ -2307,4 +2307,13 @@ body.light-mode .project-btn.outline:hover .btn-icon {
     .next-btn {
         right: 10px;
     }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: row !important;
+            height: 60px !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
 }
