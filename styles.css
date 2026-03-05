@@ -1039,7 +1039,7 @@ body.light-mode .timeline::before {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 24px;
+    padding: 16px;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -1064,26 +1064,25 @@ body.light-mode .timeline::before {
 
 .project-overlay h4 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .project-overlay p {
     color: #cbd5e1;
     font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 25px;
+    line-height: 1.4;
+    margin-bottom: 15px;
     padding: 0 10px;
 }
 
 .project-links-container {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    width: auto;
-    /* Buttons will take natural width inside overlay */
+    width: 100%;
 }
 
 .project-tags {
