@@ -197,14 +197,15 @@ body.light-mode .moon-icon {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* FLAT COLORS */
-    --gradient-dark: var(--bg-color);
+    /* GRADIENTS */
+    --gradient-dark: radial-gradient(circle at 0% 50%, rgba(79, 70, 229, 0.15) 0%, transparent 40%), radial-gradient(circle at 100% 50%, rgba(79, 70, 229, 0.15) 0%, transparent 40%), radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.1) 0%, transparent 40%), radial-gradient(circle at 50% 100%, rgba(79, 70, 229, 0.1) 0%, transparent 40%), #05060a;
     --gradient-light: #ffffff;
 }
 
 body {
     font-family: var(--font-body);
-    background: var(--bg-color);
+    background: var(--gradient-dark);
+    background-attachment: fixed;
     color: var(--text-color);
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -350,7 +351,7 @@ body.light-mode .astro-dark-logo {
     background: transparent;
     padding: 0;
     border: none;
-    border-radius: 0;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -599,7 +600,7 @@ body.light-mode .nav-container {
     letter-spacing: 1px;
     background: none;
     /* Remove old background */
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 /* Identidad Gráfica: Separador con color primario */
@@ -787,16 +788,24 @@ body.light-mode .hero-text .bio {
 }
 
 .section-title {
-    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
     font-weight: 900;
     margin-bottom: 2.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(to bottom, #fff, #94a3b8);
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #38bdf8);
+    background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientShine 4s linear infinite;
+}
+
+@keyframes gradientShine {
+    to { background-position: 200% center; }
 }
 
 body.light-mode .section-title {
@@ -823,8 +832,8 @@ body.light-mode .about-section::before {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0;
-    /* Changed to 0 for a sharper look */
+    border-radius: 20px;
+    /* Rounded look */
     padding: 50px;
     text-align: left;
     height: 100%;
@@ -986,6 +995,124 @@ body.light-mode .timeline::before {
     .glass-card {
         padding: 35px;
     }
+}
+
+/* === SERVICES SECTION === */
+.services-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.services-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s ease;
+}
+
+.service-header:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.service-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-title svg {
+    color: var(--primary-color);
+}
+
+.service-title h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.service-icon {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.service-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 25px;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-content p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Active State */
+.service-card.active {
+    border-color: rgba(79, 70, 229, 0.4);
+    box-shadow: 0 5px 25px rgba(56, 189, 248, 0.15);
+    transform: scale(1.02);
+}
+
+.service-card.active .service-content {
+    max-height: 500px;
+    padding: 10px 25px 25px;
+    opacity: 1;
+}
+
+/* Light mode overrides */
+body.light-mode .service-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .service-card:hover {
+    border-color: var(--primary-color);
+}
+
+body.light-mode .service-card.active {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .service-title h4 {
+    color: #1e293b;
+}
+
+body.light-mode .service-content p {
+    color: #475569;
 }
 
 /* === PROJECTS SECTION === */
@@ -1698,9 +1825,9 @@ body.light-mode .contact-form {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-    background: rgba(0, 0, 0, 0.3);
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 /* Light Mode Overrides for Form */
@@ -2316,4 +2443,32 @@ body.light-mode .project-btn.outline:hover .btn-icon {
             margin: 0 !important;
         }
     }
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #20b858;
+}
+
+.whatsapp-float svg {
+    display: block;
+    margin: auto;
 }

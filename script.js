@@ -67,26 +67,39 @@ themeToggle.addEventListener('click', () => {
 // === INTERNATIONALIZATION (i18n) ===
 const translations = {
     es: {
-        'nav-logo': 'PORTAFOLIO.',
+        'nav-logo': 'PORTFOLIO.',
         'nav-home': 'Inicio',
         'nav-about': 'Sobre Mí',
+        'nav-services': 'Servicios',
         'nav-projects': 'Proyectos',
         'nav-skills': 'Habilidades',
         'nav-contact': 'Contacto',
-        'hero-role': 'Desarrollador Web <span class="accent-sep">|</span> Técnico Informático',
+        'hero-role': 'Desarrollador Web <span class="accent-sep">|</span> Técnico Informático Profesional',
         'hero-bio': 'Compromiso, creatividad y soluciones técnicas sólidas para tus ideas digitales.',
         'hero-cv': 'Descargar CV',
         'hero-cv-path': 'imagenes/Agustin_Nicolas_Gonzalez_ES.pdf',
         'about-title': 'Sobre Mí',
         'about-history-title': 'Mi Trayectoria',
-        'about-history-text': 'Me recibí en el 2025 como Técnico Informático Profesional, base sólida que complemento con más de 3 años de experiencia en desarrollo web. Mi enfoque está en construir soluciones digitales eficientes y profesionales. He tenido la oportunidad de conocer la cultura de trabajo en empresas como Crombie, Globant y Folder IT, lo que me ha permitido adoptar estándares de calidad y una visión orientada a resultados en cada uno de mis proyectos.',
+        'about-history-text': 'Como Desarrollador Web, me especializo en crear aplicaciones sólidas y eficientes utilizando tecnologías como Python, Node, Java, React, Astro y Tailwind. Además, soy Técnico Informático Profesional, lo que me brinda una base técnica muy fuerte. Mi experiencia abarca desde el despliegue de redes y soporte en el Hospital José María Cullen, hasta mi rol actual en Belkcar Informática, donde combino el desarrollo de software con el mantenimiento integral de infraestructura IT. Mi objetivo es aportar valor a través del código y escalar mis habilidades en un entorno 100% enfocado al desarrollo.',
         'about-timeline-title': 'Experiencia Reciente',
-        'timeline-date-1': 'Ene 2026 - Actualidad',
-        'timeline-role-1': 'Desarrollador Web',
-        'timeline-company-1': 'Standard Muebles',
-        'timeline-date-2': '2025',
-        'timeline-role-2': 'Técnico Informático Profesional',
-        'timeline-company-2': 'Graduación',
+        'timeline-date-1': 'Feb 2026 - Actualidad',
+        'timeline-role-1': 'Programador y Servicio Técnico',
+        'timeline-company-1': 'Belkcar Informática',
+        'timeline-date-2': 'Abr 2025 - Jul 2025',
+        'timeline-role-2': 'Soporte Técnico y Mantenimiento',
+        'timeline-company-2': 'Hospital José María Cullen',
+        'timeline-date-3': '2025',
+        'timeline-role-3': 'Técnico Informático Profesional',
+        'timeline-company-3': 'Graduación',
+        'services-title': 'Mis Servicios',
+        'service-1-title': 'Diseño Web Corporativo',
+        'service-1-desc': '<strong>Presencia digital profesional para tu negocio.</strong><br>Creación de páginas web institucionales, Landing Pages y Portafolios (ideales para clínicas, estudios contables, herrerías). Diseños modernos, rápidos y adaptados a celulares para atraer más clientes desde Google.',
+        'service-2-title': 'E-Commerce y Tiendas Online',
+        'service-2-desc': '<strong>Vende tus productos por internet 24/7.</strong><br>Desarrollo de tiendas virtuales autogestionables. Catálogo de productos, integración con pasarelas de pago y carritos de compra. Ideal para ferreterías, tiendas de ropa o cualquier negocio que busque expandir sus ventas a nivel nacional.',
+        'service-3-title': 'Sistemas a Medida y Bases de Datos',
+        'service-3-desc': '<strong>Automatización y gestión inteligente para negocios.</strong><br><ul style="padding-left: 20px; text-align: left; margin-top: 10px; margin-bottom: 10px;"><li><strong>Gimnasios:</strong> Base de datos (PostgreSQL/Access) con interfaz gráfica. Control de acceso mediante molinetes y validación de DNI en tiempo real.</li><li><strong>Gastronomía:</strong> Cartas digitales dinámicas con código QR y panel administrativo para actualizar precios en vivo sin reimprimir menús.</li></ul><em style="color: var(--primary-color);">Tecnologías: Node.js, Python, PostgreSQL, Access.</em>',
+        'service-4-title': 'Mantenimiento y Soporte IT',
+        'service-4-desc': '<strong>Infraestructura tecnológica siempre funcionando.</strong><br>Como Técnico Informático Profesional, ofrezco armado, reparación y mantenimiento preventivo de PCs. Configuración de redes empresariales, backups corporativos e instalación de sistemas operativos en locales comerciales.',
         'projects-title': 'Mis Proyectos',
         'project-val-title': 'Panel de Valorant',
         'project-val-desc': 'Estadísticas y métricas de partidas.',
@@ -130,6 +143,7 @@ const translations = {
         'nav-logo': 'PORTFOLIO.',
         'nav-home': 'Home',
         'nav-about': 'About Me',
+        'nav-services': 'Services',
         'nav-projects': 'Projects',
         'nav-skills': 'Skills',
         'nav-contact': 'Contact',
@@ -139,14 +153,26 @@ const translations = {
         'hero-cv-path': 'imagenes/Agustin_Nicolas_Gonzalez_EN.pdf',
         'about-title': 'About Me',
         'about-history-title': 'My Journey',
-        'about-history-text': 'I graduated in 2025 as a Professional IT Technician, a solid foundation I complement with over 3 years of web development experience. My focus is on building efficient and professional digital solutions. Having seen the work culture at companies like Crombie, Globant, and Folder IT, I have adopted quality standards and a results-oriented vision for all my projects.',
+        'about-history-text': 'As a Web Developer, I specialize in building robust and efficient applications using technologies like Python, Node, Java, React, Astro, and Tailwind. I am also a Professional IT Technician, which gives me a very strong technical foundation. My experience ranges from deploying networks and IT support at Hospital José María Cullen, to my current role at Belkcar Informática, where I combine software development with comprehensive IT infrastructure maintenance. My goal is to add value through code and scale my skills in a 100% development-focused environment.',
         'about-timeline-title': 'Recent Experience',
-        'timeline-date-1': 'Jan 2026 - Present',
-        'timeline-role-1': 'Web Developer',
-        'timeline-company-1': 'Standard Muebles',
-        'timeline-date-2': '2025',
-        'timeline-role-2': 'Professional IT Technician',
-        'timeline-company-2': 'Graduation',
+        'timeline-date-1': 'Feb 2026 - Present',
+        'timeline-role-1': 'Programmer & IT Support',
+        'timeline-company-1': 'Belkcar Informática',
+        'timeline-date-2': 'Apr 2025 - Jul 2025',
+        'timeline-role-2': 'Tech Support & Maintenance',
+        'timeline-company-2': 'Hospital José María Cullen',
+        'timeline-date-3': '2025',
+        'timeline-role-3': 'Professional IT Technician',
+        'timeline-company-3': 'Graduation',
+        'services-title': 'My Services',
+        'service-1-title': 'Corporate Web Design',
+        'service-1-desc': '<strong>Professional digital presence for your business.</strong><br>Creation of institutional websites, Landing Pages, and Portfolios (ideal for clinics, accounting firms, local shops). Modern, fast, and mobile-friendly designs to attract more clients from Google.',
+        'service-2-title': 'E-Commerce & Online Stores',
+        'service-2-desc': '<strong>Sell your products online 24/7.</strong><br>Development of self-manageable online stores. Product catalogs, payment gateway integration, and shopping carts. Ideal for hardware stores, clothing shops, or any business looking to expand sales nationwide.',
+        'service-3-title': 'Custom Systems & Databases',
+        'service-3-desc': '<strong>Automation and intelligent management for businesses.</strong><br><ul style="padding-left: 20px; text-align: left; margin-top: 10px; margin-bottom: 10px;"><li><strong>Gyms:</strong> Databases (PostgreSQL/Access) with a graphical interface. Access control via turnstiles and real-time ID validation.</li><li><strong>Gastronomy:</strong> Dynamic digital menus with QR codes and an admin panel to update prices live without reprinting menus.</li></ul><em style="color: var(--primary-color);">Tech: Node.js, Python, PostgreSQL, Access.</em>',
+        'service-4-title': 'IT Maintenance & Support',
+        'service-4-desc': '<strong>Technology infrastructure always running.</strong><br>As a Professional IT Technician, I offer PC assembly, repair, and preventive maintenance. Enterprise network configuration, corporate backups, and OS installation for commercial spaces.',
         'projects-title': 'My Projects',
         'project-val-title': 'Valorant Dashboard',
         'project-val-desc': 'Real-time match statistics and metrics.',
@@ -265,6 +291,10 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         .then(function () {
             const successText = currentLang === 'en' ? 'Message sent successfully!' : '¡Mensaje enviado con éxito!';
             statusMsg.innerText = successText;
+            function hideStatus() {
+                formStatus.classList.remove('show', 'error', 'success');
+                formStatus.textContent = '';
+            }
             statusMsg.classList.add('success');
             btn.innerText = originalText;
             document.getElementById('contact-form').reset();
@@ -370,15 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.getElementById("gallery-next");
     const currentSlideTxt = document.getElementById("current-slide");
 
-    const galleryImages = [
-        'imagenes/imagen presentacion standard muebles.PNG',
-        'imagenes/Esta es la segunda captura que tiene que ir en el carrusel.PNG',
-        'imagenes/Esta es la tercera captura que tiene que ir en el carrusel.PNG',
-        'imagenes/Captura 1 Standard Muebles.PNG',
-        'imagenes/Captura 2 Standard Muebles.PNG',
-        'imagenes/Captura 3 Standard Muebles.PNG',
-        'imagenes/Captura 4 Standard Muebles.PNG'
-    ];
+    const galleryImages = [];
 
     let currentImgIndex = 0;
 
@@ -517,8 +539,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- TYPEWRITER EFFECT ---elements to animate
-    document.querySelectorAll('.hero-text, .hero-image, .about-content, .skill-card, .project-card, .contact-form, .soft-tag').forEach((el) => {
+    document.querySelectorAll('.hero-text, .hero-image, .about-content, .skill-card, .project-card, .contact-form, .soft-tag, .service-card').forEach((el) => {
         el.classList.add('hidden-element');
         observer.observe(el);
+    });
+});
+
+// Accordion Services Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const serviceHeaders = document.querySelectorAll('.service-header');
+    serviceHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const card = header.parentElement;
+            const icon = header.querySelector('.service-icon');
+            
+            // Toggle active class
+            card.classList.toggle('active');
+            
+            // Update icon text
+            if (card.classList.contains('active')) {
+                icon.textContent = '-';
+            } else {
+                icon.textContent = '+';
+            }
+        });
     });
 });
