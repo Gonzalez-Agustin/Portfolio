@@ -140,7 +140,10 @@ const translations = {
         'form-subject-ph': 'Asunto',
         'form-message-ph': 'Tu Mensaje',
         'form-submit': 'Enviar Mensaje',
-        'footer-role': 'Desarrollador Web <br> <span style="opacity: 0.85; font-size: 0.9em;">Técnico Informático Profesional</span>',
+        'footer-role': 'Desarrollador Web',
+        'footer-slogan': 'Transformando ideas en experiencias digitales sólidas y eficientes.',
+        'footer-explore': 'Explorar',
+        'footer-social-title': 'Redes Sociales',
         'footer-contact': 'Contacto',
         'footer-links': 'Links',
         'footer-copy': '© 2026 Agustín Nicolás González. Todos los derechos reservados.'
@@ -219,7 +222,10 @@ const translations = {
         'form-subject-ph': 'Subject',
         'form-message-ph': 'Your Message',
         'form-submit': 'Send Message',
-        'footer-role': 'Web Developer <br> <span style="opacity: 0.85; font-size: 0.9em;">Professional IT Technician</span>',
+        'footer-role': 'Web Developer',
+        'footer-slogan': 'Transforming ideas into solid and efficient digital experiences.',
+        'footer-explore': 'Explore',
+        'footer-social-title': 'Social Media',
         'footer-contact': 'Contact',
         'footer-links': 'Links',
         'footer-copy': '© 2026 Agustín Nicolás González. All rights reserved.'
