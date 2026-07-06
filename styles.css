@@ -1665,12 +1665,9 @@ body.light-mode .soft-tag:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    /* Stack vertically */
-    align-items: center;
-    /* Center everything */
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
     gap: 30px;
 }
 
@@ -1694,8 +1691,8 @@ body.light-mode .soft-tag:hover {
 
 .social-links {
     display: flex;
-    justify-content: center;
-    /* Center icons */
+    justify-content: flex-start;
+    /* Align left for desktop */
     gap: 20px;
 }
 
@@ -2066,6 +2063,10 @@ body.light-mode .hero-socials .social-icon-hero:hover {
     .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     .footer-col h4::after {
