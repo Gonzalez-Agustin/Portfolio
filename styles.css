@@ -1147,6 +1147,13 @@ body.light-mode .service-content p {
     /* Background gradients or images are set inline or will be added later */
 }
 
+/* Center the 3rd card to form an inverted pyramid */
+.project-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 15px); /* Exactly half the grid minus half the gap */
+}
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
@@ -1307,6 +1314,10 @@ body.light-mode .pill-btn:hover {
         grid-template-columns: 1fr;
         padding: 20px 15px;
         gap: 20px;
+    }
+    .project-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        width: 100%;
     }
 }
 
@@ -2120,7 +2131,7 @@ body.light-mode .hero-socials .social-icon-hero:hover {
 }
 
 .project-btn {
-    flex: 1;
+    flex: 0 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
